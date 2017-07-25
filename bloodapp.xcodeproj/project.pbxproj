@@ -15,6 +15,7 @@
 		F439740F1F1DD8BC00A42EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F439740D1F1DD8BC00A42EED /* LaunchScreen.storyboard */; };
 		F439741A1F1DD8BC00A42EED /* bloodappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43974191F1DD8BC00A42EED /* bloodappTests.swift */; };
 		F43974251F1DD8BC00A42EED /* bloodappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43974241F1DD8BC00A42EED /* bloodappUITests.swift */; };
+		F43974331F1DE2CB00A42EED /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43974321F1DE2CB00A42EED /* addViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F43974201F1DD8BC00A42EED /* bloodappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bloodappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43974241F1DD8BC00A42EED /* bloodappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloodappUITests.swift; sourceTree = "<group>"; };
 		F43974261F1DD8BC00A42EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F43974321F1DE2CB00A42EED /* addViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				F43974011F1DD8BC00A42EED /* AppDelegate.swift */,
 				F43974031F1DD8BC00A42EED /* ViewController.swift */,
+				F43974321F1DE2CB00A42EED /* addViewController.swift */,
 				F43974051F1DD8BC00A42EED /* Main.storyboard */,
 				F439740B1F1DD8BC00A42EED /* Assets.xcassets */,
 				F439740D1F1DD8BC00A42EED /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				F43974041F1DD8BC00A42EED /* ViewController.swift in Sources */,
 				F43974021F1DD8BC00A42EED /* AppDelegate.swift in Sources */,
+				F43974331F1DE2CB00A42EED /* addViewController.swift in Sources */,
 				F439740A1F1DD8BC00A42EED /* bloodapp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +511,7 @@
 				F439742B1F1DD8BC00A42EED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F439742C1F1DD8BC00A42EED /* Build configuration list for PBXNativeTarget "bloodappTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				F439742E1F1DD8BC00A42EED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F439742F1F1DD8BC00A42EED /* Build configuration list for PBXNativeTarget "bloodappUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				F43974311F1DD8BC00A42EED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
