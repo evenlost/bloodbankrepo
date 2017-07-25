@@ -11,8 +11,6 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
     
     
-   
-    
     @IBOutlet weak var table: UITableView!
     
     @IBOutlet weak var plusbtn: UIBarButtonItem!
@@ -35,7 +33,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         definesPresentationContext = true
         table.tableHeaderView = searchController.searchBar
         
-        self.table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+    //    self.table.register(TableViewCell.self, forCellReuseIdentifier: "cell")
         
         
 
@@ -79,17 +78,34 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
         
-        
+        //code to print in custom cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         let newtask = filteredtask[indexPath.row]
         
         
-            cell.textLabel?.text = String(describing:indexPath.row + 1) + "  " + newtask.name! + "  " + newtask.blood! + "  " + String(newtask.contact)
+        //print in custom cell
+        cell.cellname?.text = newtask.name
+        cell.cellbgroup?.text = newtask.blood
+        cell.cellcontact?.text = String (newtask.contact)
+        cell.cellsn?.text = String(describing: indexPath.row + 1)
+        
+        //print bgcolor in cell
+        cell.contentView.backgroundColor = ((indexPath.row%2)==0) ? UIColor.blue : UIColor.green
+        
+        
+        
+    //to print in table view not in custom cell
+//        let cell = UITableViewCell()
+//        
+//        
+//        let newtask = filteredtask[indexPath.row]
+//        
+//        
+//            cell.textLabel?.text = String(describing:indexPath.row + 1) + "  " + newtask.name! + "  " + newtask.blood! + "  " + String(newtask.contact)
         
         return cell
     }
-    
     
     
     //fetching the data
@@ -149,7 +165,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
     }
-}
-class mytableviewcell {
-
 }
